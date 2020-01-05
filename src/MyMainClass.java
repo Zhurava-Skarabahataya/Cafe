@@ -8,8 +8,7 @@ public class MyMainClass {
         myCafe.startTheDay();
         Products coffee = new Products("Coffeusius", 100);
         Products tea = new Products("Teeeea", 30);
-        Worker w = new Worker();
-        w.printWorkers();
+        Worker.printWorkers();
 
         for (int i = 0; i < (int)(Math.random()*20); i++){
             coffee.orderOfProduct();
