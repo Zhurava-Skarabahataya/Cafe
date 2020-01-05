@@ -7,7 +7,7 @@ public class Products {
     public int timeToPrepare;
     public static List<Products> prod = new ArrayList<>();
 
-    public String makeAYummyWord() {
+    public String makeAYummyWord() {  //generates beautiful ummy word
         String[] yummywords = new String[]{"delicious", "tasty", "wonderful",
                 "orgasmic", "fantastic", "fair-without-hair", "hot-hot-hot", "desperate", "cool", "happy", "soft"};
         return yummywords[(int)(Math.random()*10)];
@@ -24,5 +24,10 @@ public class Products {
     public void orderOfProduct(){
         Cafe.totalMoney += price;
         System.out.println("Here is your " + makeAYummyWord() + " " + name + "." );
+    }
+
+    public void orderOfProduct(int x){
+        Cafe.totalMoney += price*x;
+        System.out.println("Here is your " + x+ " " + makeAYummyWord() + " " + name + "." );
     }
 }

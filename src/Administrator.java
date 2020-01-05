@@ -31,5 +31,8 @@ public class Administrator extends Worker {
         }
     }
 
-
+    @Override
+    public void getSalary() {
+        System.out.println("My salary is a secret.");
+    }
 }

@@ -16,4 +16,12 @@ public class Barista extends Worker {
     public int getLevelOfCoffeeMaking(){
         return levelOfCoffeeMaking;
     }
+
+    @Override
+    public void getSalary() {
+        if (personalMoney>0)
+            System.out.println("Hey, hooray, now I have "+ personalMoney + " coins.");
+        else
+            System.out.println("Why am I still working here?...");
+    }
 }
